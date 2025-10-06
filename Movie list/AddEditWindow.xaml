@@ -1,0 +1,24 @@
+﻿<Window x:Class="MovieList.AddEditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Add/Edit Film" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBox x:Name="TitleBox" Text="Title" Margin="0,5"/>
+            <TextBox x:Name="DirectorBox" Text="Director" Margin="0,5"/>
+            <TextBox x:Name="YearBox" Text="Year" Margin="0,5"/>
+            <ComboBox x:Name="GenreBox" Text="Genre" Margin="0,5"/>
+            <TextBox x:Name="RatingBox" Text="Rating" Margin="0,5"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Right">
+            <Button Content="OK" Width="80" Margin="5" Click="Ok_Click"/>
+            <Button Content="Cancel" Width="80" Margin="5" IsCancel="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
