@@ -64,7 +64,7 @@ namespace MovieList
 
                 if (result == MessageBoxResult.Yes)
                 {
-                    Film.Clear();
+                    Film.Remove(selected);
                 }
             }
             else
